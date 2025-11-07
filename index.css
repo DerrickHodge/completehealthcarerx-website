@@ -1,6 +1,32 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+@theme {
+  --color-burgundy: #7A1E37;
+  --color-burgundy-dark: #5C1529;
+  --color-rose-light: #D9A5B3;
+  --color-rose-mist: #F4E8EC;
+  --color-pearl: #FAF8F7;
+  --color-cream: #EFECE9;
+  --color-gold: #C9A46C;
+  --color-slate-500: #64748b;
+  --color-slate-600: #4B5563;
+  --color-slate-700: #334155;
+  --color-slate-900: #1F2937;
+  --color-success: #0F9D58;
+  --color-error: #DC2626;
+  --color-seafoam: #A6CFAD;
+}
 
-/* Custom styles (add as needed) */
+html {
+	scroll-behavior: smooth;
+}
+
+/* Custom utility to hide scrollbars */
+.hide-scrollbar {
+	-ms-overflow-style: none; /* IE and Edge */
+	/* scrollbar-width is only supported in Firefox and Chrome 121+ */
+	scrollbar-width: none;
+}
+.hide-scrollbar::-webkit-scrollbar {
+	display: none; /* Chrome, Safari and Opera */
+}
 
