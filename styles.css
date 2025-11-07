@@ -1,3 +1,12 @@
+/* Testimonials carousel custom styles */
+.testimonial-carousel {
+  transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  display: flex;
+  width: 100%;
+}
+.testimonial-slide {
+  min-width: 100%;
+}
 /* Main styles (UTF-8 encoded) - used instead of index.css to avoid encoding issues */
 @import "tailwindcss";
 

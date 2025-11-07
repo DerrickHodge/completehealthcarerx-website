@@ -49,23 +49,24 @@ const Testimonials: React.FC = () => {
         </div>
         
         <div className="mt-12 relative max-w-2xl mx-auto" role="region" aria-label="Patient Testimonials carousel">
-          <div className="overflow-hidden">
+          <div className="w-full overflow-hidden">
             <div
-              className={`flex transition-transform duration-500 ease-in-out testimonial-carousel`}
-              aria-live="polite" // Announce changes in testimonials
+              className="flex flex-nowrap w-full transition-transform duration-500 ease-in-out"
+              style={{ transform: `translateX(-${currentIndex * 100}%)` }}
+              aria-live="polite"
               data-current-index={currentIndex}
             >
               {testimonials.map((testimonial, index) => (
-                <div 
-                  key={index} 
-                  className="w-full flex-shrink-0 px-4"
-                  role="group" // Indicates that this div is part of a larger, related group (the carousel)
-                  aria-roledescription="slide" // Describes the role of the group
+                <div
+                  key={index}
+                  className="w-full shrink-0"
+                  role="group"
+                  aria-roledescription="slide"
                   aria-label={`Testimonial ${index + 1} of ${testimonials.length}`}
                 >
-                  <div className="bg-white p-8 rounded-2xl shadow-sm flex flex-col">
+                  <div className="mx-auto bg-white p-8 rounded-2xl shadow-sm flex flex-col max-w-xl">
                     <div className="flex items-start">
-                      <QuoteIcon className="h-8 w-8 text-rose-light flex-shrink-0" aria-hidden="true" />
+                      <QuoteIcon className="h-8 w-8 text-rose-light shrink-0" aria-hidden="true" />
                       <p className="ml-4 text-lg italic text-slate-700">"{testimonial.quote}"</p>
                     </div>
                     <div className="mt-6 flex items-center justify-end">
