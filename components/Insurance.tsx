@@ -1,12 +1,11 @@
 import React from 'react';
 
 const insuranceProviders = [
-  { name: 'Medicare', logoUrl: 'https://cdn.worldvectorlogo.com/logos/centers-for-medicare-and-medicaid-services-logo.svg' },
-  { name: 'Medicaid', logoUrl: 'https://cdn.worldvectorlogo.com/logos/medicaid.svg' },
+  { name: 'Medicaid', logoUrl: 'https://iili.io/KDYmqU7.jpg' },
   { name: 'Anthem', logoUrl: 'https://cdn.worldvectorlogo.com/logos/anthem-inc-logo.svg' },
-  { name: 'UnitedHealthcare', logoUrl: 'https://cdn.worldvectorlogo.com/logos/unitedhealthcare.svg' },
-  { name: 'Cigna', logoUrl: 'https://cdn.worldvectorlogo.com/logos/cigna.svg' },
-  { name: 'Aetna', logoUrl: 'https://cdn.worldvectorlogo.com/logos/aetna.svg' },
+  { name: 'UnitedHealthcare', logoUrl: 'https://iili.io/KDa5ETF.png' },
+  { name: 'Cigna', logoUrl: 'https://iili.io/KDa5Ghg.png' },
+  { name: 'Aetna', logoUrl: 'https://iili.io/KDYmflS.jpg' },
 ];
 
 const Insurance: React.FC = () => {
