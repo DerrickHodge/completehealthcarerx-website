@@ -7,12 +7,16 @@ interface HeroProps {
 
 const Hero: React.FC<HeroProps> = ({ onOpenRefillModal, onOpenTransferModal }) => {
   return (
-    <section className="bg-cream">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-32 text-center">
-        <h1 className="text-4xl md:text-6xl font-bold text-slate-900 tracking-tight">
+    <section className="relative hero-bg bg-center bg-cover min-h-[60vh] md:min-h-[70vh] lg:min-h-screen flex items-center">
+      <div
+        className="absolute inset-0 bg-gradient-to-b from-white/10 via-transparent to-black/30"
+        aria-hidden="true"
+      />
+      <div className="relative container mx-auto px-4 sm:px-6 lg:px-8 text-center py-12">
+        <h1 className="text-4xl md:text-6xl font-bold text-white tracking-tight">
           Elevated Wellness <span className="text-burgundy">Pharmacy</span> for Personalized Care, Prescriptions & Wellness
         </h1>
-        <p className="mt-6 max-w-3xl mx-auto text-lg text-slate-600">
+        <p className="mt-6 max-w-3xl mx-auto text-lg text-white/90">
           Your local, independent pharmacy dedicated to personalized care. We offer fast, friendly service to help you manage your health with confidence.
         </p>
         <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">

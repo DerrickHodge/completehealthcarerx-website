@@ -1,32 +1,121 @@
 @import "tailwindcss";
+
 @theme {
-  --color-burgundy: #7A1E37;
-  --color-burgundy-dark: #5C1529;
-  --color-rose-light: #D9A5B3;
-  --color-rose-mist: #F4E8EC;
-  --color-pearl: #FAF8F7;
-  --color-cream: #EFECE9;
-  --color-gold: #C9A46C;
-  --color-slate-500: #64748b;
-  --color-slate-600: #4B5563;
-  --color-slate-700: #334155;
-  --color-slate-900: #1F2937;
-  --color-success: #0F9D58;
-  --color-error: #DC2626;
-  --color-seafoam: #A6CFAD;
+  /* ============================
+   *  Brand tokens (single source of truth)
+   * ============================ */
+
+  /* Brand blues (from the cross) */
+  --color-brand-blue:        #0A4164;
+  --color-brand-blue-dark:   #072D46;
+  --color-brand-blue-light:  #2E5D7B;
+
+  /* Brand greens (from the bowl & pestle) */
+  --color-brand-green:       #69AA91;
+  --color-brand-green-dark:  #497665;
+  --color-brand-green-light: #7FB6A1;
+
+  /* Neutrals / backgrounds */
+  --color-bg-soft:           #FBFAF8; /* matches logo background */
+  --color-bg-subtle:         #F4F7FA;
+  --color-border-subtle:     #E2E8F0;
+  --color-border-strong:     #CBD5E1;
+
+  /* Text */
+  --color-text-strong:       #0F172A;
+  --color-text:              #1F2937;
+  --color-text-muted:        #6B7280;
+
+  /* Status + utility */
+  --color-success:           #0F9D58;
+  --color-error:             #DC2626;
+  --color-warning:           #C9A46C; /* old gold as warning/accent */
+  --color-seafoam:           #A6CFAD; /* optional soft success/accent */
+
+  /* Slates (keep as-is; work well with new logo) */
+  --color-slate-500:         #64748B;
+  --color-slate-600:         #4B5563;
+  --color-slate-700:         #334155;
+  --color-slate-900:         #1F2937;
+
+  /* ============================
+   *  Backwards-compatible aliases
+   *  (old names used in existing code)
+   * ============================ */
+
+  /* Old “burgundy” now mapped to brand blue */
+  --color-burgundy:          var(--color-brand-blue);
+  --color-burgundy-dark:     var(--color-brand-blue-dark);
+
+  /* Old rose colors mapped to brand green */
+  --color-rose-light:        var(--color-brand-green);
+  --color-rose-mist:         var(--color-brand-green-light);
+
+  /* Old neutrals mapped to new backgrounds */
+  --color-pearl:             var(--color-bg-soft);
+  --color-cream:             var(--color-bg-subtle);
+
+  /* Old gold kept as-is (already used as warning above) */
+  --color-gold:              #C9A46C;
 }
 
+/* ============================
+ *  Global
+ * ============================ */
+
 html {
-	scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 /* Custom utility to hide scrollbars */
 .hide-scrollbar {
-	-ms-overflow-style: none; /* IE and Edge */
-	/* scrollbar-width is only supported in Firefox and Chrome 121+ */
-	scrollbar-width: none;
-}
-.hide-scrollbar::-webkit-scrollbar {
-	display: none; /* Chrome, Safari and Opera */
+  -ms-overflow-style: none; /* IE and Edge */
+  /* scrollbar-width is only supported in Firefox and Chrome 121+ */
+  scrollbar-width: none;
 }
 
+.hide-scrollbar::-webkit-scrollbar {
+  display: none; /* Chrome, Safari and Opera */
+}
+
+/* ============================
+ *  Hero
+ * ============================ */
+
+.hero-bg {
+  position: relative;
+  background-image: url('/pharmacy-bg.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: var(--color-text-strong);
+}
+
+.hero-bg::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  /* brand blue @ 55% opacity */
+  background: rgba(10, 65, 100, 0.55);
+  z-index: 0;
+}
+
+/* Ensure content sits above overlay */
+.hero-bg > * {
+  position: relative;
+  z-index: 1;
+}
+
+/* ============================
+ *  Testimonials carousel
+ * ============================ */
+
+.testimonial-carousel {
+  display: flex;
+  width: 100%;
+  transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.testimonial-slide {
+  min-width: 100%;
+}
