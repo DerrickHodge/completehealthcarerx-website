@@ -101,7 +101,7 @@ html {
   position: absolute;
   inset: 0;
   /* brand blue @ 55% opacity */
-  background: rgba(10, 65, 100, 0.55);
+  background: rgba(0, 1, 2, 0.69);
   z-index: 0;
 }
 

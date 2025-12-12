@@ -37,7 +37,7 @@ const Footer: React.FC<FooterProps> = ({ navigateTo, onOpenHipaaModal }) => {
         <div className="grid md:grid-cols-3 gap-8">
           <div className="space-y-4">
              <a href="/" onClick={handleHomeClick} className="flex items-center space-x-3" aria-label="Complete Healthcare Rx Home">
-              <img src="https://iili.io/Kt3A9Ns.md.png" alt="Complete Healthcare Rx Logo" className="h-10 w-auto rounded-md bg-white p-1" />
+              <img src="https://iili.io/f7esH8u.png" alt="Complete Healthcare Rx Logo" className="h-10 w-auto rounded-md bg-white p-1" />
               <span className="text-xl tracking-tight text-white">
                 <span className="font-bold">Complete</span>Healthcare Rx
               </span>
