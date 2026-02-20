@@ -43,13 +43,12 @@
    *  (old names used in existing code)
    * ============================ */
 
-  /* Old “burgundy” now mapped to brand blue */
-  --color-burgundy:          var(--color-brand-blue);
-  --color-burgundy-dark:     var(--color-brand-blue-dark);
+  /* Old burgundy and rose palette */
+  --color-burgundy:          #660033;
+  --color-burgundy-dark:     #6F0622;
 
-  /* Old rose colors mapped to brand green */
-  --color-rose-light:        var(--color-brand-green);
-  --color-rose-mist:         var(--color-brand-green-light);
+  --color-rose-light:        #F33A6A;
+  --color-rose-mist:         #F990AC;
 
   /* Old neutrals mapped to new backgrounds */
   --color-pearl:             var(--color-bg-soft);
