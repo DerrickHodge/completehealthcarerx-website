@@ -9,11 +9,11 @@ const testimonials = [
     name: "Sarah L.",
     avatarUrl: "https://iili.io/Ktj5Egf.jpg",
   },
-  {
-    quote: "Switching to Complete Healthcare was the best decision. The med sync service has made managing my prescriptions so much easier.",
-    name: "Michael B.",
-    avatarUrl: "https://iili.io/Ktj5XbS.jpg",
-  },
+    {
+      quote: "Switching to Elevated WellnessRX was the best decision. The med sync service has made managing my prescriptions so much easier.",
+      name: "Michael B.",
+      avatarUrl: "https://iili.io/Ktj5XbS.jpg",
+    },
   {
     quote: "I'm so grateful for their fast local delivery service. It's a lifesaver for me, and the drivers are always so friendly.",
     name: "Janet P.",

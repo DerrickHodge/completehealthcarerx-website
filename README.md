@@ -1,10 +1,10 @@
-# Complete Healthcare RX
+# Elevated WellnessRX
 
-The official website for Complete Healthcare RX - Your trusted local pharmacy partner for personalized care, fast refills, and expert health advice.
+The official website for Elevated WellnessRX - Your trusted local pharmacy partner for personalized care, fast refills, and expert health advice.
 
-## About Complete Healthcare RX
+## About Elevated WellnessRX
 
-Complete Healthcare RX is an independent pharmacy dedicated to providing personalized healthcare solutions. We focus on:
+Elevated WellnessRX is an independent pharmacy dedicated to providing personalized healthcare solutions. We focus on:
 
 - Personalized pharmaceutical care
 - Fast and reliable prescription refills
@@ -117,11 +117,10 @@ All tables include timestamps and are protected with Row Level Security (RLS).
 
 ## Contributing
 
-This is the official Complete Healthcare RX website repository. For contributions or issues, please contact the development team.
+This is the official Elevated WellnessRX website repository. For contributions or issues, please contact the development team.
 
 ## License
-
-Proprietary - Complete Healthcare RX
+Proprietary - Elevated WellnessRX
 
 ## Contact
 

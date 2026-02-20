@@ -15,7 +15,7 @@ const Hero: React.FC<HeroProps> = ({ onOpenRefillModal, onOpenTransferModal }) =
       <div className="relative max-w-7xl px-4 sm:px-6 lg:px-8 py-24 lg:py-32 flex flex-col items-start justify-center">
         <div className="max-w-2xl">
           <span className="inline-block px-4 py-1 rounded-full bg-(--color-brand-green)/15 text-(--color-brand-green) border border-(--color-brand-green)/30 text-sm font-semibold mb-6">
-            Welcome to Complete HealthcareRX
+            Welcome to Elevated WellnessRX
           </span>
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-white leading-tight mb-6">
             More Than Just a <span className="text-(--color-brand-green)">Pharmacy</span>. <br/>
