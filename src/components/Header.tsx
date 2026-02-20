@@ -57,7 +57,7 @@ const Header: React.FC<HeaderProps> = ({ navigateTo, onOpenRefillModal }) => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
           <a href="/" onClick={handleHomeClick} className="flex items-center space-x-3" aria-label="Elevated WellnessRX Home">
-            <img src="https://iili.io/f7esH8u.png" alt="Elevated WellnessRX Logo" className="h-10 w-auto" />
+            <img src="logo-v1.png" alt="Elevated WellnessRX Logo" className="h-10 w-auto" />
             <span className="hidden md:inline text-xl text-slate-900 tracking-tight">
               <span className="font-bold">Elevated</span>WellnessRX
             </span>

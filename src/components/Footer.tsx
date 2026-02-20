@@ -37,7 +37,7 @@ const Footer: React.FC<FooterProps> = ({ navigateTo, onOpenHipaaModal }) => {
         <div className="grid md:grid-cols-3 gap-8">
           <div className="space-y-4">
              <a href="/" onClick={handleHomeClick} className="flex items-center space-x-3" aria-label="Elevated WellnessRX Home">
-              <img src="https://iili.io/f7esH8u.png" alt="Elevated WellnessRX Logo" className="h-10 w-auto rounded-md bg-white p-1" />
+              <img src="logo-v1.png" alt="Elevated WellnessRX Logo" className="h-10 w-auto rounded-md bg-white p-1" />
               <span className="text-xl tracking-tight text-white">
                 <span className="font-bold">Elevated</span>WellnessRX
               </span>

@@ -28,7 +28,7 @@ const AboutPage: React.FC = () => {
               <img 
                 src="https://iili.io/KDZtZib.png" 
                 alt="Nick Knight, CEO of Elevated WellnessRX" 
-                className="rounded-2xl shadow-lg w-full object-cover aspect-[4/5]"
+                className="rounded-2xl shadow-lg w-full object-cover aspect-4/5"
               />
             </div>
             <div className="md:col-span-2">
